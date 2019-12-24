@@ -1,0 +1,34 @@
+.home-container {
+    color: white;
+    font-family: 'Lao MN'
+}
+
+.home-container > p:first-of-type {
+    font-size: 25px;
+}
+
+.icon-container {
+    background-color: rgba(109, 62, 136, 0.151);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+}
+.lang-icon {
+    width: 50px;
+    margin: 8px;
+}
+
+.easy {
+    margin-bottom: 200px;
+}
+/* 
+.lang-icon.html {
+    height: 70px;
+    width: 70px;
+}
+
+.lang-icon.react {
+    width: 70px;
+    height: 80px; */
+

@@ -1,0 +1,29 @@
+footer {
+    border-top: 1px solid grey;
+    box-shadow: 2px 0px 2px 3px grey;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lao MN'
+}
+
+.more {
+    color: white;
+    font-size: 12px;
+}
+.linkedin {
+    width: 45px;
+    
+}
+.github {
+    width: 40px;
+}
+
+a > img {
+    padding: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.432);
+    border-radius: 5px;
+}
