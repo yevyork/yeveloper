@@ -1,9 +1,11 @@
 import React from 'react';
+import './styles/Resume.css'
+import resume from '../assets/yev.pdf'
 
 function Resume() {
     return(
         <div className="resume-main-container">
-            This is <strong>Resumé</strong>
+            <object data={resume} title='wow'width='300px' height="700px"></object>
         </div>
     )
 }

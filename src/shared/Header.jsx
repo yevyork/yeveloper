@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="header-container">
       <Nav />
-      <NavLink className='heading' activeClassName='' to="/">
+      <NavLink className='heading-nav' activeClassName='' to="/">
         <p className="heading">YEVELOPER</p>
       </NavLink>
     </div>

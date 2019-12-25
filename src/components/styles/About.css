@@ -1,8 +1,8 @@
 .who, .yev, .dev, .vis {
     color: white;
-    font-family: 'Lao MN';
+    font-family: 'Poppins', sans-serif;
     margin: 10px;
 }
 .who {
-    font-size: 40px;
+    font-size: 30px;
 }

@@ -1,34 +1,71 @@
 .home-container {
     color: white;
-    font-family: 'Lao MN'
+    font-family: 'Poppins', sans-serif;
+
 }
 
-.home-container > p:first-of-type {
-    font-size: 25px;
+.quick-about {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+    margin: 0px 20px
 }
 
-.icon-container {
-    background-color: rgba(109, 62, 136, 0.151);
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-content: center;
-}
-.lang-icon {
-    width: 50px;
-    margin: 8px;
+.build {
+    font-size: 18px;
+    line-height: 50px;
+    margin: 100px 20px
 }
 
 .easy {
-    margin-bottom: 200px;
+    margin: 50px 0;
 }
-/* 
-.lang-icon.html {
-    height: 70px;
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+.skills-icon {
+    width: 100px;
+    position: absolute;
+    margin: -90px -50px;
+}
+.skill-heading {
+    background-color: rgba(109, 62, 136, 0.151);
+    height: 30px;
+}
+
+.icon-container1 {
+    background-color: rgba(109, 62, 136, 0.151);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+
+.lang-icon {
+    width: 50px;
+    margin: 4%;
+}
+
+.html{
+    height: 80px;
     width: 70px;
 }
 
-.lang-icon.react {
+.sql {
+    height: 80px;
     width: 70px;
-    height: 80px; */
+}
+ 
+/*
+.lang-icon.js {
+    margin-left: 13px
+}
+.lang-icon.react {
+    width: 60px;
+    height: 80px;
+
+} */
 

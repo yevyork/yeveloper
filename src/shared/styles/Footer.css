@@ -7,7 +7,7 @@ footer {
     flex: 1;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Lao MN'
+    font-family: 'Poppins', sans-serif
 }
 
 .more {
@@ -23,7 +23,8 @@ footer {
 }
 
 a > img {
-    padding: 3px;
+    margin-right: 30px;
+    padding: 2px;
     box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.432);
     border-radius: 5px;
 }
