@@ -1,8 +1,75 @@
-.who, .yev, .dev, .vis {
+.who, .yev, .dev, .vis, .bio, .fact, h1 {
     color: white;
     font-family: 'Poppins', sans-serif;
     margin: 10px;
 }
+
+.bio {
+    font-size: 15px;
+    margin: 5px 15%;
+    line-height: 35px;
+
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
 .who {
     font-size: 30px;
+}
+.yev {
+    font-size: 17px;
+}
+.yev-pic {
+    width: 185px;
+    height: 160px;
+    border-radius: 50%;
+    opacity: 0.7
+
+}
+
+.fact-container {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin-bottom: 20%;
+    padding: 0
+}
+
+.fact {
+    font-size: 13px;
+    list-style: none;
+}
+
+@media screen and (min-width: 700px) {
+    .yev-pic {
+        width: 330px;
+        height: 260px;
+    }
+    
+    .who {
+        font-size: 30px;
+    }
+    .yev {
+        font-size: 17px;
+    }
+
+    .bio {
+        font-size: 20px;
+        margin: 5px 15%;
+        line-height: 35px;
+    }
+
+    .fact-container {
+        color: white;
+        line-height: 30px;
+        margin-bottom: 20%;
+    }
+    
+    .fact {
+        font-size: 18px;
+    }
+    
 }

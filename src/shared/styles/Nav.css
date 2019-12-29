@@ -41,10 +41,11 @@
   animation: unblur 1s ease backwards 1000ms, greenblink 2s ease-in-out 1 5s;
   
 }
-
+@media screen and (max-width:480px) {
 .active {
   box-shadow: 2px 2px 2px 2px rgba(151, 240, 8, 0.603);
   font-size: 15px;
+}
 }
 
 @keyframes unblur {
@@ -67,4 +68,64 @@
   100% {
     box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.479);
   }
+}
+
+@media screen and (min-width: 700px) {
+
+  .nav-main-container {
+    display: flex;
+    align-items: flex-end;
+    width: max-content;
+    height: max-content;
+    margin-left: 35%;
+    margin-right: 10%;
+    
+
+  }
+  .nav {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  box-shadow: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 6px;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 30px;
+  border: none;
+  }
+
+  .nav:active {
+    background-color: rgba(255, 166, 0, 0.267);
+  }
+
+  .nav:hover {
+    color: rgba(149, 184, 93, 0.603)
+  }
+  .nav.nav-home {
+    
+    animation: unblur 1s ease backwards 1000ms
+    
+  }
+  .nav.nav-works {
+    animation: unblur 1s ease backwards 1000ms
+    
+  }
+  .nav.nav-resume {
+    padding-right: 5px;
+    animation: unblur 1s ease backwards 1000ms
+    
+  }
+
+  .active {
+    font-size: 20px;
+    color:rgba(151, 240, 8, 0.603)
+  }
+  
+
 }

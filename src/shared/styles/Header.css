@@ -56,3 +56,32 @@
     color: white;
   }
 }
+
+@media screen and (min-width: 700px) {
+  .header-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    box-shadow: 2px 0px 2px 3px grey;
+    margin-bottom: 20px;
+
+  }
+
+  .heading-nav {
+    width: max-content;
+    height: max-content;
+    letter-spacing: 10px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    font-size: 30px;
+    text-decoration: none;
+    animation: unblur 1s normal forwards ease-in-out;
+    animation-iteration-count: 1;
+    margin-left: 15%;
+  }
+}

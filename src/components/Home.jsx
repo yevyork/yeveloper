@@ -34,9 +34,7 @@ function Home() {
         </div>
       </div>
       <p className='easy'>Let's make it <strong>look easy</strong>.</p>
-      <div className='icon-container2'>
-        
-      </div>
+      
     </div>
   );
 }
