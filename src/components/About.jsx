@@ -14,7 +14,7 @@ function About() {
 
         <h1>Bio</h1>
         <p className="bio">
-          My parents brought me to the Unites States from Moscow, Russia in
+          My parents brought me to the United States from Moscow, Russia in
           1993. We spoke Russian at home- it helped me retain my first language. As a kid, I
           spent a lot of time on the computer, but never actually doing any real
           programming except console commands in Half-Life games. I've always
