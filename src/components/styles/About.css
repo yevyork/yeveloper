@@ -23,8 +23,9 @@ h1 {
     font-size: 17px;
 }
 .yev-pic {
-    width: 185px;
-    height: 160px;
+    object-fit: cover;
+    width: 195px;
+    height: 195px;
     border-radius: 50%;
     opacity: 0.7
 
@@ -46,7 +47,8 @@ h1 {
 @media screen and (min-width: 700px) {
     .yev-pic {
         width: 330px;
-        height: 260px;
+        height: 330px;
+        
     }
     
     .who {

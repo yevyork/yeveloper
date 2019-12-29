@@ -29,16 +29,16 @@
 }
 .nav.nav-home {
   margin-top: 10px;
-  animation: unblur 1s ease backwards 1000ms, greenblink 2s ease-in-out 1 3s;
+  animation: unblur 1s ease backwards 1000ms, greenblink 0.5s linear 1 1.3s;
   
 }
 .nav.nav-works {
-  animation: unblur 1s ease backwards 1000ms, greenblink 2s ease-in-out 4s;
+  animation: unblur 1s ease backwards 1000ms, greenblink 0.5s linear 1.8s;
   
 }
 .nav.nav-resume {
   margin-bottom: 10px;
-  animation: unblur 1s ease backwards 1000ms, greenblink 2s ease-in-out 1 5s;
+  animation: unblur 1s ease backwards 1000ms, greenblink 0.5s linear 1 2.3s;
   
 }
 @media screen and (max-width:480px) {
@@ -62,7 +62,13 @@
   0% {
     box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.479);
   }
+  25% {
+    box-shadow: 2px 2px 2px 2px rgba(151, 240, 8, 0.603);
+  }
   50% {
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.479);
+  }
+  75% {
     box-shadow: 2px 2px 2px 2px rgba(151, 240, 8, 0.603);
   }
   100% {
