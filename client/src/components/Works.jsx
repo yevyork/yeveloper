@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/Works.css";
 import axios from "axios";
+import apiUrl from '../services/apiConfig.js'
 
 class Works extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Works extends React.Component {
   }
   async componentDidMount() {
     try {
-      const response = await axios(`http://localhost:3000/api/works/`);
+      const response = await axios(`${apiUrl}/works/`);
       this.setState({ works: response.data.works });
     } catch (err) {
       console.error(err);
@@ -25,9 +26,9 @@ class Works extends React.Component {
             console.log(work)
               return (
                   <div className="work">
-                <a className='imglink' href={work.deployedUrl}><img className='work-gif'src={work.gifUrl} alt='gif' /></a>
+                <a className='imglink' href={work.deployedUrl}target='_blank'rel="noopener noreferrer"><img className='work-gif'src={work.gifUrl} alt='gif' /></a>
                 <br></br>
-                  <a className='work-link' href={work.deployedUrl} target='_blank'>{work.projectTitle}</a>
+                  <a className='work-link' href={work.deployedUrl} target='_blank'rel="noopener noreferrer">{work.projectTitle}</a>
                   <p className='work-type'>{work.projectType}</p>
                   <p className='work-description'>{work.description}</p>
                   </div>
