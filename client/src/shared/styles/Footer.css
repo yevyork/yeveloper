@@ -1,6 +1,6 @@
 footer {
-  border-top: 1px solid grey;
-  box-shadow: 2px 0px 2px 3px grey;
+  
+  box-shadow: 2px 0px 2px 3px rgba(202, 202, 202, 0.185);
   height: 100px;
   width: 100%;
   display: flex;
@@ -25,11 +25,11 @@ footer {
 a > img {
   margin-right: 30px;
   padding: 2px;
-  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.432);
+  /* box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.432); */
   border-radius: 5px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
   
     .more {
     font-size: 100%;

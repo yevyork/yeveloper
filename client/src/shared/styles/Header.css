@@ -33,23 +33,14 @@
 }
 
 .heading:hover {
-  animation: blink 0.1s;
+  animation: blink 0.4s;
 }
 
 @keyframes blink {
   0% {
-    color: blueviolet;
-  }
-  20% {
-    color: black;
+    color: rgb(164, 91, 231);
   }
   40% {
-    color: white;
-  }
-  60% {
-    color: purple;
-  }
-  80% {
     color: black;
   }
   100% {
@@ -57,7 +48,7 @@
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
   .header-container {
     flex: 1;
     flex-direction: row-reverse;
@@ -83,5 +74,6 @@
     animation: unblur 1s normal forwards ease-in-out;
     animation-iteration-count: 1;
     margin-left: 20%;
+    margin-right:5%;
   }
 }
