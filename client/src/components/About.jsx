@@ -15,11 +15,11 @@ function About() {
         <h1>Bio</h1>
         <p className="bio">
           My parents brought me to the United States from Moscow, Russia in
-          1993. We spoke Russian at home- it helped me retain my first language. As a kid, I
-          spent a lot of time on the computer, but never actually doing any real
-          programming except console commands in Half-Life games. I've always
-          been fascinated how everything is made, and programming takes me a few
-          levels deeper on my quest for knowledge.
+          1993. We spoke Russian at home- it helped me retain my first language.
+          As a kid, I spent a lot of time on the computer, but never actually
+          doing any real programming except console commands in Half-Life games.
+          I've always been fascinated how everything is made, and programming
+          takes me a few levels deeper on my quest for knowledge.
           <br></br>
           <br></br>
           Prior to getting into programming, I was an insurance professional,
@@ -42,21 +42,14 @@ function About() {
         </p>
 
         <h1>Facts about Yev</h1>
-        <ul className="fact-container">
-          <li className="fact">
-            · I took an elevator with Bill Gates and Emmanuel Macron once
-          </li>
-          <li className="fact">
-            · I'm a mild hoarder but if I had more space, I'd be a severe
-            hoarder
-          </li>
-          <li className="fact">
-            · Hate cilantro, love tacos and pho so I always have to be mindful
-            of that
-            <li className="fact">· I am missing my appendix</li>
-            <li>· I'm very big on animal rights</li>
-          </li>
-        </ul>
+        <div className="fact-container">
+          <p className="fact">· I took an elevator with Bill Gates and Emmanuel Macron once</p>
+          <p className="fact">· I'm a mild hoarder but if I had more space, I'd be a severe hoarder</p>
+          <p className="fact">· Hate cilantro, love tacos and pho so I always have to be mindful of that</p>
+          <p className="fact">· I am missing my appendix</p>
+          <p className='fact'>· I'm very big on animal rights</p>
+          
+        </div>
       </div>
     </>
   );

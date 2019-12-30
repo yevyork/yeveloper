@@ -1,8 +1,9 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Works = sequelize.define('Works', {
+    projectType: DataTypes.STRING,
     projectTitle: DataTypes.STRING,
-    description: DataTypes.STRING,
+    description: DataTypes.TEXT,
     gifUrl: DataTypes.STRING,
     deployedUrl: DataTypes.STRING
   }, {});

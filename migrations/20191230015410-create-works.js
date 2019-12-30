@@ -8,11 +8,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      projectType: {
+        type: Sequelize.STRING
+      },
       projectTitle: {
         type: Sequelize.STRING
       },
       description: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       gifUrl: {
         type: Sequelize.STRING
