@@ -1,0 +1,37 @@
+footer {
+  border-top: 1px solid grey;
+  box-shadow: 2px 0px 2px 3px grey;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+
+.more {
+  color: white;
+  font-size: 12px;
+}
+.linkedin {
+  width: 45px;
+}
+.github {
+  width: 40px;
+}
+
+a > img {
+  margin-right: 30px;
+  padding: 2px;
+  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.432);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  
+    .more {
+    font-size: 100%;
+  }
+}

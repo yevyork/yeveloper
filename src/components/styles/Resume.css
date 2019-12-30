@@ -1,0 +1,31 @@
+.resume-main-container {
+    width: 95%;
+    height: max-content;
+    margin: auto;
+    object-fit: contain;
+}
+
+.res-pic {
+    object-fit: contain;
+    width: 100%;
+    animation: unblur 1s backwards;
+    animation-delay: 0.5s;
+    opacity: 0.9;
+
+}
+
+@keyframes unblur {
+    0% {
+      filter: blur(1.5em);
+    }
+  
+    100% {
+      filter: blur(0);
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .resume-main-container {
+      width: 75%;
+    }
+  }
