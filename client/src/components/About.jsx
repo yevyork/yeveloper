@@ -9,7 +9,7 @@ function About() {
         <p className="who">Who am I?</p>
         <img className="yev-pic" src={profile} alt="yev" />
         <p className="yev">
-          I'm Yevgeniy- but for readability, we can refactor that to Yev.
+          I'm Yev.
         </p>
 
         <h1>Bio</h1>
@@ -43,12 +43,12 @@ function About() {
 
         <h1>Facts about Yev</h1>
         <div className="fact-container">
-          <p className="fact">· I took an elevator with Bill Gates and Emmanuel Macron once</p>
-          <p className="fact">· I'm a mild hoarder but if I had more space, I'd be a severe hoarder</p>
-          <p className="fact">· Hate cilantro, love tacos and pho so I always have to be mindful of that</p>
-          <p className="fact">· I am missing my appendix</p>
-          <p className='fact'>· I'm very big on animal rights</p>
-          
+          <p className="fact">· Once took an elevator with Bill Gates and Emmanuel Macron.</p>
+          <p className="fact">· A hoarder who's conscious of his space- Loves looking back at relics.</p>
+          <p className="fact">· Dislikes and sometimes has no tolerance for cilantro and arugula.</p>
+          <p className="fact">· Missing his appendix.</p>
+          <p className='fact'>· Very big on animal rights.</p>
+          <p className='fact'>· Drove from Brooklyn, NY to Seattle, WA in three days by himself.</p>
         </div>
       </div>
     </>
