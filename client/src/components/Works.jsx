@@ -23,7 +23,6 @@ class Works extends React.Component {
       if (this.state.works.length) {
           console.log(this.state.works)
           return this.state.works.map(work => {
-            console.log(work)
               return (
                   <div className="work">
                 <a className='imglink' href={work.deployedUrl}target='_blank'rel="noopener noreferrer"><img className='work-gif'src={work.gifUrl} alt='gif' /></a>
@@ -40,7 +39,6 @@ class Works extends React.Component {
 
   render() { 
     const { works } = this.state
-    console.log(works)
     if (!works) {
         return <p>Loading</p>;
       } else {
