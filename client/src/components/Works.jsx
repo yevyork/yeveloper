@@ -20,14 +20,19 @@ class Works extends React.Component {
   }
 
   renderWorks = () => {
-          return this.state.works.map(work => {
+          return this.state.works.reverse().map(work => {
               return (
-                  <div className="work">
+                  <div className="work" key={work.id}>
                 <a className='imglink' href={work.deployedUrl}target='_blank'rel="noopener noreferrer"><img className='work-gif'src={work.gifUrl} alt='gif' /></a>
                 <br></br>
                   <a className='work-link' href={work.deployedUrl} target='_blank'rel="noopener noreferrer">{work.projectTitle}</a>
                   <p className='work-type'>{work.projectType}</p>
                   <p className='work-description'>{work.description}</p>
+                  <div className='links'>
+                    
+                    <a className='link deployed-link' href={work.deployedUrl} target='_blank'rel="noopener noreferrer">View Site</a>
+                    <a className='link gh-link' href={work.githubRepo} target='_blank'rel="noopener noreferrer">GitHub</a>
+                  </div>
                   </div>
               )
           })

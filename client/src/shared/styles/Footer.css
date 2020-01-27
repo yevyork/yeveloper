@@ -18,6 +18,21 @@ footer {
 .linkedin {
   width: 45px;
 }
+
+.contact-me {
+  width: 41px;
+  opacity: 0.8;
+
+
+}
+
+.linkedin, .github, .contact-me {
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  text-decoration: none;
+}
+
 .github {
   width: 40px;
 }
@@ -33,5 +48,13 @@ a > img {
   
     .more {
     font-size: 100%;
+  }
+
+  .linkedin, .github, .contact-me {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    max-width: 100%;
   }
 }
