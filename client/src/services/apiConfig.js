@@ -1,14 +1,11 @@
+import axios from 'axios'
 
-let apiUrl
-const apiUrls = {
-  production: 'https://sei-items-api.herokuapp.com/api',
-  development: 'http://localhost:3000/api'
-}
+const API_KEY = process.env.REACT_APP_API_KEY
+export const BASE_URL = `https://${API_KEY}.mockapi.io/`
 
-if (window.location.hostname === 'localhost') {
-  apiUrl = apiUrls.development
-} else {
-  apiUrl = apiUrls.production
-}
+export const api = axios.create({
+  baseURL: BASE_URL,
+  headers: {}
+})
 
-export default apiUrl
+export default api

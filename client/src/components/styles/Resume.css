@@ -10,7 +10,7 @@
     width: 100%;
     animation: unblur 1s backwards;
     animation-delay: 0.5s;
-    opacity: 0.9;
+    opacity: 1;
 
 }
 
@@ -27,5 +27,8 @@
   @media screen and (min-width: 500px) {
     .resume-main-container {
       width: 75%;
+    }
+    .res-pic {
+      max-width: 70%;
     }
   }

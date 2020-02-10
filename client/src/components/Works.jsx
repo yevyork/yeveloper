@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles/Works.css";
-import axios from "axios";
-import apiUrl from '../services/apiConfig.js'
+import { getAllWorks } from '../services/works'
 
 class Works extends React.Component {
   constructor(props) {
@@ -10,48 +9,49 @@ class Works extends React.Component {
       works: []
     };
   }
+
   async componentDidMount() {
     try {
-      const response = await axios(`${apiUrl}/works/`);
-      this.setState({ works: response.data.works });
-    } catch (err) {
-      console.error(err);
+      const works = await getAllWorks();
+      this.setState({ works })
+    } catch (error) {
+      console.log(error)
     }
   }
 
   renderWorks = () => {
-      if (this.state.works.length) {
-          console.log(this.state.works)
-          return this.state.works.map(work => {
-            console.log(work)
+          return this.state.works.reverse().map(work => {
               return (
-                  <div className="work">
+                  <div className="work" key={work.id}>
                 <a className='imglink' href={work.deployedUrl}target='_blank'rel="noopener noreferrer"><img className='work-gif'src={work.gifUrl} alt='gif' /></a>
                 <br></br>
                   <a className='work-link' href={work.deployedUrl} target='_blank'rel="noopener noreferrer">{work.projectTitle}</a>
                   <p className='work-type'>{work.projectType}</p>
                   <p className='work-description'>{work.description}</p>
+                  <div className='links'>
+                    
+                    <a className='link deployed-link' href={work.deployedUrl} target='_blank'rel="noopener noreferrer">View Site</a>
+                    <a className='link gh-link' href={work.githubRepo} target='_blank'rel="noopener noreferrer">GitHub</a>
+                  </div>
                   </div>
               )
           })
-      }
+      
   }
   
 
   render() { 
     const { works } = this.state
-    console.log(works)
-    if (!works) {
-        return <p>Loading</p>;
-      } else {
+    
     return ( 
         <div className='works-main-container'>
-            {this.renderWorks()}
+            { works.length > 1 ? this.renderWorks() : (<p className='white'>If this takes more than 5 seconds to load, 
+            <br></br><br></br>please contact me immediately.</p>)}
         </div>
      );
      
 }
 }
-}
+
 
 export default Works;
