@@ -13,8 +13,8 @@ import skills from "../assets/lang-icons/skills.png"
 function Home() {
   return (
     <div className="home-container">
-      <p className='quick-about'>I'm a <strong>full-stack developer</strong> with a background in insurance, and media production. <br></br><br></br>My priorities are structure, efficiency, and maintaining focus on the task at hand. I pride myself on my ability to constantly expand my knowledge-base, empathize with an audience, and solve problems without affecting stability, all while being able to swiftly adapt to new technologies and environments.</p>
-      <p className='build'>Let's build something useful- <strong>Together</strong>.</p>
+      <p className='quick-about'>I'm a <strong>full-stack developer</strong> with a background in insurance and media production. <br></br><br></br>My priorities are structure, efficiency, and maintaining focus on the task at hand. I pride myself on my ability to constantly expand my knowledge-base, empathize with an audience, and solve problems without affecting stability, all while being able to swiftly adapt to new technologies and environments.</p>
+      <p className='build'>Let's build something useful- <strong>together</strong>.</p>
 
       
 
